@@ -1,12 +1,11 @@
 import streamlit as st
-import pandas as pd
 
 # Page setup
 st.set_page_config(page_title="Nishtha Gupta | Data Science Portfolio", layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Portfolio Sections")
-page = st.sidebar.radio("Navigate to:", ["About Me", "Projects", "Experience", "Challenges & Solutions", "Contact"])
+page = st.sidebar.radio("Navigate to:", ["About Me", "Projects", "Experience", "Contact"])
 
 # --- ABOUT ---
 if page == "About Me":
@@ -45,32 +44,26 @@ elif page == "Projects":
     with col1:
         st.write("""
         I developed a stock trend forecasting tool using Python, SQL, and Facebook Prophet.  
-        It analyzes over 10 years of stock data (5,000+ data points) and achieves ~92% trend accuracy.
-        The project is presented through an interactive Streamlit dashboard, reducing analysis time by 50%.
-        [GitHub](https://github.com/Nish0501/stock-forecast-prophet-streamlit) | [Demo](https://your-stock-demo.streamlit.app)
+        It analyzes over 10 years of stock data (more than 5,000 data points) and achieves 
+        approximately 92% trend accuracy.
+
+        The project is presented through an interactive Streamlit dashboard, which helps users 
+        reduce analysis time and make faster decisions.
+
+        GitHub: [View Project](https://github.com/Nish0501/stock-forecast-prophet-streamlit)
         """)
         st.metric(label="Forecast Accuracy", value="92%")
-        # Placeholder chart
-        data = pd.DataFrame({
-            "Date": ["2025-01-01", "2025-01-02", "2025-01-03", "2025-01-04"],
-            "Predicted Price": [100, 102, 101, 105],
-            "Actual Price": [99, 101, 100, 104]
-        })
-        st.line_chart(data.set_index("Date"))
     with col2:
-        st.image("stock_forecast.png", caption="Dashboard Example", use_container_width=True)
+        st.image("graph.jpg", caption="Dashboard Example", use_container_width=True)
 
-    st.subheader("Healthcare Recommendation System (Zidio Internship, Ongoing 2025)")
-    col1, col2 = st.columns([2, 1])
-    with col1:
-        st.write("""
-        Ongoing project at Zidio to recommend doctors/treatments based on user symptoms, using content-based 
-        filtering (scikit-learn), targeting 85% user satisfaction.
-        Deploying a Streamlit app for real-time recommendations.
-        [GitHub](https://github.com/Nish0501/healthcare-reco)  # To be updated
-        """)
-    with col2:
-        st.image("healthcare_reco.png", caption="Recommendation App Mockup")  # Upload mockup
+    st.subheader("Healthcare Recommendation System (Internship Project, 2025)")
+    st.write("""
+    This is an ongoing project as part of my internship at Zidio.  
+    It is a recommendation system that helps users find doctors and treatments based on symptoms.  
+    I'm using content-based filtering techniques with scikit-learn and deploying the project with Streamlit.
+
+    GitHub: [Link to be added](https://github.com/Nish0501/healthcare-reco)
+    """)
 
 # --- EXPERIENCE ---
 elif page == "Experience":
@@ -97,32 +90,21 @@ elif page == "Experience":
     - Supported customer and finance operations
     """)
 
-# --- CHALLENGES & SOLUTIONS ---
-elif page == "Challenges & Solutions":
-    st.header("Challenges & Solutions")
-    st.write("""
-    **Stock Forecasting Project**  
-    - **Challenge**: Missing data (5% of 5,000+ stock records) led to inaccurate predictions.  
-    - **Solution**: Applied forward-fill imputation and validated with RMSE, improving accuracy by 10%.  
-    - **Impact**: Achieved 92% trend accuracy, enabling reliable forecasting for stakeholders.
-
-    **Healthcare Recommendation System (Ongoing)**  
-    - **Challenge**: Imbalanced symptom data risked poor recommendation accuracy.  
-    - **Solution**: Plan to use oversampling and cosine similarity to ensure robust recommendations.  
-    - **Impact**: Targeting 85% user satisfaction with real-time Streamlit app.
-    """)
-
 # --- CONTACT ---
 elif page == "Contact":
     st.header("Contact")
+
     st.write("""
     Thank you for viewing my portfolio. If you'd like to collaborate, have feedback, 
     or would like to connect professionally, feel free to reach out.
     """)
+
     st.write("""
-    - Email: nishthag0912@gmail.com  
+    - Email: nishthag0912@gmail.com 
     - LinkedIn: [linkedin.com/in/nishthagupta0501](https://linkedin.com/in/nishthagupta0501)  
     - GitHub: [github.com/Nish0501](https://github.com/Nish0501)  
-    - Kaggle: [kaggle.com/nishthagupta05](https://kaggle.com/nishthagupta05)
+    - Kaggle: [kaggle.com/nishthagupta](https://kaggle.com/nishthagupta05)
     """)
+
     st.success("Looking forward to connecting with you.")
+i hve made this 
