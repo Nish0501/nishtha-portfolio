@@ -41,6 +41,12 @@ with col1:
     - Built an interactive Streamlit dashboard, reducing analysis time by 50%.
     [GitHub Link](https://github.com/Nish0501/stock-forecast)
     """)
+    # Placeholder chart for Stock Forecasting
+data = pd.DataFrame({
+    "Date": ["2025-01-01", "2025-01-02", "2025-01-03", "2025-01-04"],
+    "Predicted Price": [100, 102, 101, 105]
+})
+st.line_chart(data.set_index("Date"))
 with col2:
     st.image("https://via.placeholder.com/300x200", caption="Stock Forecasting Dashboard")  # Replace with screenshot
 
