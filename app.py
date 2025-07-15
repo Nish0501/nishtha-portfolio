@@ -28,7 +28,7 @@ with col1:
     analytics and visualization.
     """)
 with col2:
-    st.image("https://via.placeholder.com/150", caption="Nishtha Gupta")  # Replace with your photo
+    st.image("profile.jpg", caption="Nishtha Gupta")
 
 # Projects Section
 st.header("Projects")
@@ -48,7 +48,7 @@ data = pd.DataFrame({
 })
 st.line_chart(data.set_index("Date"))
 with col2:
-    st.image("https://via.placeholder.com/300x200", caption="Stock Forecasting Dashboard")  # Replace with screenshot
+    st.image("graph.jpg", caption="Stock Forecasting Dashboard")
 
 st.subheader("Healthcare Recommendation System (Zidio Internship, Ongoing 2025)")
 st.write("""
