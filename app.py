@@ -42,10 +42,7 @@ with col1:
     [GitHub Link](https://github.com/Nish0501/stock-forecast)
     """)
     # Placeholder chart for Stock Forecasting
-data = pd.DataFrame({
-    "Date": ["2025-01-01", "2025-01-02", "2025-01-03", "2025-01-04"],
-    "Predicted Price": [100, 102, 101, 105]
-})
+
 st.line_chart(data.set_index("Date"))
 with col2:
     st.image("graph.jpg", caption="Stock Forecasting Dashboard")
