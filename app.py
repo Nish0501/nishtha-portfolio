@@ -50,11 +50,11 @@ elif page == "Projects":
         The project is presented through an interactive Streamlit dashboard, which helps users 
         reduce analysis time and make faster decisions.
 
-        GitHub: [View Project](https://github.com/Nish0501/stock-forecast)
+        GitHub: [View Project](https://github.com/Nish0501/stock-forecast-prophet-streamlit)
         """)
         st.metric(label="Forecast Accuracy", value="92%")
     with col2:
-        st.image("graph.jpg", caption="Dashboard Example", use_column_width=True)
+        st.image("graph.jpg", caption="Dashboard Example", use_container_width=True)
 
     st.subheader("Healthcare Recommendation System (Internship Project, 2025)")
     st.write("""
@@ -100,10 +100,10 @@ elif page == "Contact":
     """)
 
     st.write("""
-    - Email: nishtha.gupta@mitwpu.edu.in  
+    - Email: nishthag0912@gmail.com 
     - LinkedIn: [linkedin.com/in/nishthagupta0501](https://linkedin.com/in/nishthagupta0501)  
     - GitHub: [github.com/Nish0501](https://github.com/Nish0501)  
-    - Kaggle: [kaggle.com/nishthagupta](https://kaggle.com/nishthagupta)
+    - Kaggle: [kaggle.com/nishthagupta](https://kaggle.com/nishthagupta05)
     """)
 
     st.success("Looking forward to connecting with you.")
