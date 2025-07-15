@@ -43,7 +43,7 @@ with col1:
     """)
     # Placeholder chart for Stock Forecasting
 
-st.line_chart(data.set_index("Date"))
+
 with col2:
     st.image("graph.jpg", caption="Stock Forecasting Dashboard")
 
