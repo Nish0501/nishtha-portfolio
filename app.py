@@ -30,7 +30,7 @@ if page == "About Me":
         st.image("profile.jpg", caption="Nishtha Gupta", width=200)
 
     try:
-        with open("Nishtha_Gupta_Resume.pdf", "rb") as f:
+        with open("Nishtha_Updated_resume.pdf", "rb") as f:
             st.download_button("Download My Resume", f, "Nishtha_Gupta_Resume.pdf")
     except:
         st.info("Resume file not found. Add 'Nishtha_Gupta_Resume.pdf' to enable download.")
